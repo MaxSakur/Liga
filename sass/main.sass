@@ -704,10 +704,22 @@ body
 	$lines: #8fadcc
 	
 	&--wrapper
+		&_item
+			z-index: 1
+			position: relative
+		.line-h
+			margin: 0
+			padding: 0
+			height: 3px
+			background-color: #8DADCE
+			margin-top: 100px
+		
 		.lastpoint
+			margin: 0
+			padding: 0
 			& p
-				width: 250px
-				height: 250px
+				width: 100%
+				height: 280px
 				background-color: #ec2808
 				border-radius: 100%
 				display: flex
@@ -716,11 +728,144 @@ body
 				font-family: 'DIN Pro';
 				font-weight: 600;
 				font-size: 90px
+				margin-top: -35px
 		.y2017
-			width: 300px
-			height: 30px
-			background-image: url(./../img/2017.png)
-			
+			margin: 0
+			padding: 0
+			margin-top: -100px
+			margin-left: -30px
+			position: relative
+			z-index: 1
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 50%
+				height: 2px
+				bottom: 20%
+				left: -200px
+				background-color: #8DADCE
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				left: -100px
+				bottom: 25%
+				transform: rotate(180deg)
+		
+		.y2017-2
+			position: relative
+			margin-right: -50px
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 3px
+				height: 50%
+				top: -22%
+				left: 257px
+				background-color: #8DADCE
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				top: -10%
+				left: 200px
+				transform: rotate(90deg)
+		.y2016
+			margin: 0
+			padding: 0
+			margin-left: -50px		
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				bottom: 20%
+				left: -100px
+				transform: rotate(180deg)
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 100%
+				height: 2px
+				bottom: 15%
+				left: -200px
+				background-color: #8DADCE
+		.y2015
+			margin: 0
+			padding: 0
+			margin-top: -200px				
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				right: 0
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 3px
+				height: 50%
+				bottom: -50px
+				left: 257px
+				background-color: #8DADCE
+		.y2014
+			padding-top: 100px
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 100%
+				height: 3px
+				bottom: 228px
+				left: -328px
+				background-color: #8DADCE
+		.showNextTimelapse
+			border: 2px solid #8DADCE
+			margin-top: -100px
+			position: relative
+			z-index: 2
+			cursor: pointer
+			background-color: #fff
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 238px
+				height: 3px
+				bottom: 20px
+				right: -238px
+				background-color: #8DADCE
+
+#consist
+	background-color: #F8F8F8
 	
 // SOCIAL PAGE
 	// FIRST SCREEN
