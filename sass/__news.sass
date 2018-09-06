@@ -1,0 +1,42 @@
+
+.news-fs
+	background-image: url('../img/mediabg.jpg')
+	background-position: center
+	background-size: cover
+	& .navbar-default .navbar-collapse .navbar-nav li a
+        color: #fff
+
+.buttons
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin: 100px 0
+    & a
+        background-color: transparent
+        text-decoration: none
+        text-transform: uppercase
+        color: #2a2a2a
+        font-size: 30px
+        font-weight: bold
+        cursor: pointer
+        border-bottom: 1px solid transparent
+        &:hover
+            border-bottom: 1px solid #000
+
+.box
+    border: 1px solid $grey
+    color: $dark
+    font-family: 'DIN Pro'
+    margin: 20px 0
+    border: 1px solid transparent
+    cursor: pointer
+    &:hover
+        border: 1px solid $dark
+    & p
+        font-size: 15px
+        
+    &--header
+        text-align: center
+        font-weight: 700
+        font-size: 18px
+    
