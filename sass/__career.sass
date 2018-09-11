@@ -1,0 +1,38 @@
+
+.career-fs
+	position: relative
+	&:before
+		content: ""
+		background-image: url('../img/careerBG.jpg')
+		background-position: center
+		background-size: cover
+		position: absolute
+		z-index: 5
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	&:after
+		content: ""
+		background-color: rgba($dark, .8)
+		position: absolute
+		z-index: 6
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	& .firstSection--content
+		margin-top: 50vh
+
+// Career section end
+.career--ts
+	color: $dark
+	overflow: hidden
+	&_form
+		padding: 10% 0
+		& .form-group
+			margin-top: 40px
+			& label
+				font-weight: 100
+		& .btn
+			margin-top: 10px

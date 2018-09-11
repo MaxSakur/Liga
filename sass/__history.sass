@@ -1,0 +1,319 @@
+
+.history-fs
+	position: relative
+	&:before
+		content: ""
+		background-image: url('../img/historyBG.jpg')
+		filter: grayscale(100%)
+		background-position: center
+		background-size: cover
+		position: absolute
+		z-index: 5
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	&:after
+		content: ""
+		background-color: rgba($dark, .8)
+		position: absolute
+		z-index: 6
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	& .firstSection--content_mainText
+		padding-bottom: 50px
+
+.thirdSection--history
+	& .slider--header
+		color: $black
+		text-align: center
+		padding: 50px 0
+	& .item
+		background-color: red
+		height: 300px
+		width: 533px
+		overflow: hidden
+		cursor: pointer
+		&:hover>.itempoint
+			width: 1000px
+			height: 1200px
+			top: 0
+			left: 0
+			border-radius: 0
+			background-color: rgba(#ec2808, .8)
+		& .itempoint
+			transition: all .5s ease
+			position: absolute
+			width: 200px
+			height: 200px
+			background-color: #ec2808
+			border-radius: 100%
+			display: block
+			z-index: 9
+			top: 12% 
+			left: 31% 
+
+		& .itembg
+			position: relative
+			z-index: 2
+			& img
+				position: absolute
+				height: 300px
+				width: 533px
+		&:before
+			content: ""
+			background-color: rgba($dark, .7)
+			position: absolute
+			z-index: 6
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+		& .itemheader
+			position: relative
+			z-index: 10
+			padding-top: 100px
+			& p
+				font-size: 40px
+				text-align: center
+		& .itemtext
+			position: relative
+			z-index: 10
+			width: 80%
+			margin: auto
+			text-align: center
+
+	& .carousel .slider--controls
+		width: 100%
+	& .slider--controls svg
+		fill: rgba(grey, .5)
+		width: 30px
+		&:hover
+			fill:  #ec2808
+	& .carousel-indicators
+		bottom: 50px
+		& .left, .right
+			width: 30px
+    		margin: auto
+    		display: block
+		& .active
+			background-color: #ec2808
+		& li
+			background-color: rgba(grey, .5)
+
+	.slider--buttons
+		display: flex
+		flex-direction: row
+		width: 300px
+		justify-content: center
+		align-items: center
+		&_prev
+			flex-grow: 1
+			& svg
+				width: 30px
+
+				
+		&_indicators
+			flex-grow: 3
+			& .carousel-indicators
+				position: relative
+				bottom: inherit
+				margin-left: 0
+				width: inherit
+				left: inherit
+		&_next
+			flex-grow: 1
+			& svg
+				width: 30px
+			
+	// NAGL RADA PAGE
+.nagl-rada
+	padding: 100px 0
+	&--header
+		color: $broun
+		text-align: center
+		padding: 50px 0
+	&--wrapper
+		&_box
+			& .name
+				font-size: 20px
+				font-weight: 100
+				font-family: 'DIN Pro'
+				color: $black
+				padding: 10px 0
+			& .role
+				color: $black
+				line-height: 1
+				font-weight: 500
+
+	// HISTORYTREE
+.historytree
+	&--header
+		color: $white
+		text-align: center
+		padding: 50px 0
+	&--wrapper
+		&_item
+			z-index: 1
+			position: relative
+		.line-h
+			margin: 0
+			padding: 0
+			height: 3px
+			background-color: #8DADCE
+			margin-top: 100px
+		
+		.lastpoint
+			margin: 0
+			padding: 0
+			& p
+				width: 100%
+				height: 280px
+				background-color: #ec2808
+				border-radius: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				font-family: 'DIN Pro';
+				font-weight: 600;
+				font-size: 90px
+				margin-top: -35px
+		.y2017
+			margin: 0
+			padding: 0
+			margin-top: -100px
+			margin-left: -30px
+			position: relative
+			z-index: 1
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 50%
+				height: 2px
+				bottom: 20%
+				left: -200px
+				background-color: #8DADCE
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				left: -100px
+				bottom: 25%
+				transform: rotate(180deg)
+		
+		.y2017-2
+			position: relative
+			margin-right: -50px
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 3px
+				height: 50%
+				top: -22%
+				left: 257px
+				background-color: #8DADCE
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				top: -10%
+				left: 200px
+				transform: rotate(90deg)
+		.y2016
+			margin: 0
+			padding: 0
+			margin-left: -50px		
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				bottom: 20%
+				left: -100px
+				transform: rotate(180deg)
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 100%
+				height: 2px
+				bottom: 15%
+				left: -200px
+				background-color: #8DADCE
+		.y2015
+			margin: 0
+			padding: 0
+			margin-top: -200px				
+			&:after
+				content: ""
+				background-image: url('../img/arrow.png')
+				background-size: contain
+				background-repeat: no-repeat
+				display: block
+				width: 30px
+				height: 30px
+				position: absolute
+				right: 0
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 3px
+				height: 50%
+				bottom: -50px
+				left: 257px
+				background-color: #8DADCE
+		.y2014
+			padding-top: 100px
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 100%
+				height: 3px
+				bottom: 228px
+				left: -328px
+				background-color: #8DADCE
+		.showNextTimelapse
+			border: 2px solid #8DADCE
+			margin-top: -100px
+			position: relative
+			z-index: 2
+			cursor: pointer
+			background-color: #fff
+			&:before
+				z-index: -1
+				content: ""
+				display: block
+				position: absolute
+				width: 238px
+				height: 3px
+				bottom: 20px
+				right: -238px
+				background-color: #8DADCE
+
+#consist
+	background-color: #C2C8D4

@@ -1,0 +1,321 @@
+// FIRST SECTION
+.firstSection
+	position: relative
+	overflow: hidden
+	&--content
+		z-index: 999
+		position: relative
+		margin-top: 60vh
+		padding-bottom: 10vh
+		&_mainText
+			font-family: 'DIN Pro'
+			font-weight: 600
+			font-size: 90px
+			text-transform: uppercase
+			line-height: 1
+			padding-bottom: 50px
+
+// FIRST SECTION VIDEO
+#myVideo
+	position: absolute
+	right: 0
+	bottom: 0
+	top: -100px
+	left: 0
+	min-width: 100%
+	min-height: 100%
+
+.firstSection--videoWrapper
+	&:before
+		content: ""
+		z-index: 1
+		position: absolute
+		bottom: 0
+		top: 0
+		left: 0
+		right: 0
+		background-color: rgba($dark, .8)
+
+
+
+
+// 1.1 First Section end
+
+// 2.1 Second Section
+
+.secondSection
+	background-color: $grey
+	color: $dark
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	padding: 150px 0
+	&--content
+		position: relative
+		&_mainText
+			font-family: 'DIN Pro';
+			font-weight: 600;
+			font-size: 46px
+			text-transform: uppercase
+    		line-height: 1.5;
+			color: #2a2a2a
+		& p:nth-child(1)
+			margin-bottom: 20px
+		& p:nth-child(2),& p:nth-child(3), & p:nth-child(4), & p:nth-child(5)
+			font-weight: 100
+			margin-bottom: 20px
+		&_verticalLine
+			position: absolute
+			left: -100px
+			top: 0
+			height: 100%
+			width: 2px
+			background-color: #fff
+
+// 2.1 Second Section end
+
+
+// 3.1 third Section
+
+.thirdSection
+	background-image: url(../img/ts-bg.jpg)
+	background-size: cover
+	background-position: 50%
+	background-repeat: no-repeat
+	position: relative
+	padding: 250px 0
+	margin: 50px 0
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: -100px
+		left: 25%
+		height: 2px
+		width: 50%
+		background-color: $grey
+	&--content
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		position: relative
+
+		&_header
+			color: $dark
+			text-align: center
+		& .underHeader
+			color: #f01313
+			text-align: center
+
+
+.section--underline	
+	height: 2px
+	width: 100%
+	background-color: $grey
+// 3.1 third Section end
+
+
+
+// 4.1 Fourth Section
+.fourthSection
+	color: $black
+	position: relative
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom:  0
+		left: 25%
+		height: 2px
+		width: 50%
+		background-color: $grey
+	&--content
+		margin-top: 20vh
+		&_header
+			color: $dark
+			margin-bottom: 50px
+			text-align: center
+
+
+// SLIDER
+.carousel
+	& .slider--item
+		&_count
+			font-family: 'DIN Pro Cond'
+			font-weight: bold
+			font-size: 100px
+			position: relative
+			z-index: 999 !important
+			color: $number
+			&:after
+				content: ''
+				position: absolute
+				top: 55%
+				left: 5px
+				z-index: -999 !important
+				height: 5px
+				width: 200px
+				background-color: $line
+				display: block
+		&_text
+			padding-left: 120px
+			margin-top: -40px
+			font-size: 22px
+			// width: 300px
+			line-height: 1em
+			white-space: pre-line
+			line-height: 27px
+	& .slider--controls
+		width: 200px
+		margin: 80px auto
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-around
+		margin-bottom: 50px
+		& svg
+			fill: $grey
+			cursor: pointer
+			width: 50px
+			height: auto
+			&:hover
+				fill: $line
+// SLIDER end
+
+// 4.1 Fourth Section end
+
+// FIFTH SECTION
+
+.fifthSection
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	color: $dark
+	&--content
+		margin: 15vh auto 15vh auto
+		&_header
+			color: $dark
+			text-align: center
+			padding-bottom: 100px
+	
+		& .icon-table
+			&--row
+				border-bottom: 1px solid $grey
+				border-top: 1px solid $grey
+				&_item
+					margin: 3px 0
+					&:nth-child(2)
+						border-left: 1px solid $grey
+						border-right: 1px solid $grey
+
+
+.hovertry
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	cursor: pointer
+	transition: all 1s ease
+	margin: auto
+	width: 300px
+	display: block
+
+.hovertry:hover
+	filter: none;
+	-webkit-filter: grayscale(0%);
+	transform: scale(1.3)
+// FIFTH SECTION END
+
+.tac
+	text-align: center
+
+.sixthSection
+	color: $dark
+	background-image: url('../img/tinyBg.jpg')
+	background-position: center
+	background-size: cover
+	padding: 30px 0
+	margin-top: 100px
+	&--wrapper
+		&_firstLine
+			padding: 80px 0
+			border-bottom: 1px solid #818181
+			& .tenM
+				font-size: 100px
+				font-family: 'DIN Pro Cond'
+				font-weight: bold
+				position: relative
+				display: block
+				color: #0c5adb
+				text-align: left
+				padding-left: 90px
+				&:after
+					content: ""
+					height: 80px
+					width: 1px
+					background-color: #818181
+					display: block
+					position: absolute
+					right: 0
+					top: 35%
+				& span.plus
+					font-weight: 100
+					font-size: 120px
+					line-height: 2
+					padding-left: 10px
+					
+			& .firstLine--comment
+				font-family: 'Fira Sans', sans-serif
+				font-size: 30px
+				padding-top: 75px
+				padding-left: 60px
+				line-height: 1
+					
+		&_secondLine
+			padding: 80px 0
+			& .leftinfopart, .rightinfopart
+				padding-left: 90px
+				&--mainnumber
+					font-size: 100px
+					font-family: 'DIN Pro Cond'
+					font-weight: bold
+					position: relative
+					display: block
+					color: #0c5adb
+					margin: 0
+					text-align: left
+					&:after
+						content: "рокiв"
+						height: 80px
+						font-size: 20px
+						display: block
+						position: absolute
+						right: 30%
+						top: 25%
+						font-weight: 500
+						color: $black
+					& span.plus
+						font-weight: 100
+						font-size: 120px
+						line-height: 1
+						padding-left: 10px
+				&--undertext
+					font-family: 'Fira Sans', sans-serif
+					font-size: 30px
+					margin-top: -20px
+					line-height: 1
+					text-align: left
+
+			& .rightinfopart--mainnumber:after
+				content: ""

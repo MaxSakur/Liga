@@ -1,0 +1,37 @@
+.investors-fs
+	position: relative
+	&:before
+		
+		content: ""
+		z-index: 6
+		position: absolute
+		bottom: 0
+		top: 0
+		left: 0
+		right: 0
+		background-color: rgba($dark, .9)
+	&:after
+		content: ""
+		background-image: url('../img/investorsBG.jpg')
+		background-position: center
+		background-size: cover
+		position: absolute
+		z-index: 5
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	& .firstSection--content
+		margin-top: 50vh
+		&_mainText
+			padding-bottom: 50px
+
+.investors--ts
+	&_textblock
+		padding: 15% 0
+		color: $dark
+		& p
+			padding: 2% 0
+		& .btn
+			margin-top: 20px
+// HISTORY / ABOUT US PAGE

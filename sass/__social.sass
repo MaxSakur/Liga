@@ -1,0 +1,60 @@
+	
+// SOCIAL PAGE
+	// FIRST SCREEN
+.social-fs
+	position: relative
+	&:before
+		content: ""
+		background-image: url('../img/socialBG.jpg')
+		filter: grayscale(100%)
+		background-position: center
+		background-size: cover
+		position: absolute
+		z-index: 5
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	&:after
+		content: ""
+		background-color: rgba(#636363, .5)
+		position: absolute
+		z-index: 6
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	& .firstSection--content
+		margin-top: 30vh
+		&_mainText
+			margin-bottom: 0
+	
+	// WALLPAPER SCREEN
+.wallpaper
+	text-align: center
+	color: $black
+	background-image: url('../img/socialWallpaper.jpg')
+	background-position: center
+	background-size: cover
+	&--wrapper
+		padding: 10% 0 20% 0
+		&_body
+			margin-top: 50px
+.social--r, .social--l
+	color: $dark
+	& .social--ts_textblock
+		margin-top: 7%
+		color: $black
+		& p
+			margin-bottom: 5%
+.social--r
+	& .social--ts_textblock
+		margin-top: 15%
+
+.img-fullwidth
+	width: 100%
+
+.social--padding
+	padding: 50px 0
+
+.only-img
