@@ -10,9 +10,9 @@
 		&_mainText
 			font-family: 'DIN Pro'
 			font-weight: 600
-			font-size: 90px
+			font-size: 52px
 			text-transform: uppercase
-			line-height: 1
+			line-height: 1.5
 			padding-bottom: 50px
 
 // FIRST SECTION VIDEO
@@ -34,7 +34,7 @@
 		top: 0
 		left: 0
 		right: 0
-		background-color: rgba($dark, .8)
+		background-color: rgba($dark, .7)
 
 
 
@@ -45,7 +45,6 @@
 
 .secondSection
 	background-color: $grey
-	color: $dark
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -56,12 +55,12 @@
 	&--content
 		position: relative
 		&_mainText
-			font-family: 'DIN Pro';
-			font-weight: 600;
+			font-family: 'DIN Pro'
+			font-weight: 600
 			font-size: 46px
 			text-transform: uppercase
-    		line-height: 1.5;
-			color: #2a2a2a
+    		line-height: 1.5
+			color: $black
 		& p:nth-child(1)
 			margin-bottom: 20px
 		& p:nth-child(2),& p:nth-child(3), & p:nth-child(4), & p:nth-child(5)
@@ -109,10 +108,10 @@
 		position: relative
 
 		&_header
-			color: $dark
+			color: $black
 			text-align: center
 		& .underHeader
-			color: #f01313
+			color: $red
 			text-align: center
 
 
@@ -140,7 +139,7 @@
 	&--content
 		margin-top: 20vh
 		&_header
-			color: $dark
+			color: $black
 			margin-bottom: 50px
 			text-align: center
 
@@ -166,13 +165,14 @@
 				background-color: $line
 				display: block
 		&_text
+			font-family: 'Fira Sans', sans-serif !important
+			font-weight: 200 !important
+			font-size: 33px
+			line-height: 1.3
 			padding-left: 120px
 			margin-top: -40px
-			font-size: 22px
-			// width: 300px
-			line-height: 1em
 			white-space: pre-line
-			line-height: 27px
+
 	& .slider--controls
 		width: 200px
 		margin: 80px auto
@@ -203,11 +203,10 @@
 	display: -o-flex
 	display: flex
 	align-items: center
-	color: $dark
 	&--content
 		margin: 15vh auto 15vh auto
 		&_header
-			color: $dark
+			color: $black
 			text-align: center
 			padding-bottom: 100px
 	
@@ -234,14 +233,14 @@
 .hovertry:hover
 	filter: none;
 	-webkit-filter: grayscale(0%);
-	transform: scale(1.3)
+	
 // FIFTH SECTION END
 
 .tac
 	text-align: center
 
 .sixthSection
-	color: $dark
+	color: $black
 	background-image: url('../img/tinyBg.jpg')
 	background-position: center
 	background-size: cover
@@ -276,11 +275,12 @@
 					padding-left: 10px
 					
 			& .firstLine--comment
-				font-family: 'Fira Sans', sans-serif
-				font-size: 30px
+				font-family: 'Fira Sans', sans-serif !important
+				font-weight: 300 !important
+				font-size: 33px
 				padding-top: 75px
 				padding-left: 60px
-				line-height: 1
+				line-height: 1.5
 					
 		&_secondLine
 			padding: 80px 0
@@ -298,11 +298,11 @@
 					&:after
 						content: "рокiв"
 						height: 80px
-						font-size: 20px
+						font-size: 30px
 						display: block
 						position: absolute
 						right: 30%
-						top: 25%
+						top: 20%
 						font-weight: 500
 						color: $black
 					& span.plus
@@ -311,10 +311,11 @@
 						line-height: 1
 						padding-left: 10px
 				&--undertext
-					font-family: 'Fira Sans', sans-serif
-					font-size: 30px
+					font-family: 'Fira Sans', sans-serif !important
+					font-weight: 300 !important
 					margin-top: -20px
-					line-height: 1
+					font-size: 33px
+					line-height: 1.5
 					text-align: left
 
 			& .rightinfopart--mainnumber:after
