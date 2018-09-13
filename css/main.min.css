@@ -437,17 +437,24 @@ body {
     left: 0;
     right: 0; }
   .career-fs .firstSection--content {
-    margin-top: 50vh; }
+    margin-top: 45vh; }
 
 .career--ts {
   color: #01213D;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 50px 0; }
   .career--ts_form {
     padding: 10% 0; }
     .career--ts_form .form-group {
       margin-top: 40px; }
       .career--ts_form .form-group label {
         font-weight: 100; }
+      .career--ts_form .form-group input {
+        font-size: 30px;
+        padding: 5px 0;
+        height: 60px;
+        text-indent: 20px;
+        color: #01213D; }
     .career--ts_form .btn {
       margin-top: 10px; }
 
@@ -1009,6 +1016,9 @@ body {
 .fz18 {
   font-size: 18px;
   line-height: 2; }
+
+.black {
+  color: #000; }
 
 .fira--sans {
   font-family: 'Fira Sans', sans-serif !important;
