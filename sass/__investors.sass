@@ -1,18 +1,8 @@
 .investors-fs
 	position: relative
-	&:before
-		
-		content: ""
-		z-index: 6
-		position: absolute
-		bottom: 0
-		top: 0
-		left: 0
-		right: 0
-		background-color: rgba($black, .8)
 	&:after
 		content: ""
-		background-image: url('../img/investorsBG.jpg')
+		background-image: url('../img/investorsBG.png')
 		background-position: center
 		background-size: cover
 		position: absolute
@@ -22,16 +12,32 @@
 		left: 0
 		right: 0
 	& .firstSection--content
-		margin-top: 40vh
+		margin-top: 50vh
 		&_mainText
 			padding-bottom: 50px
 
 .investors--ts
 	&_textblock
-		padding: 15% 0
+		padding: 5% 0
 		color: $dark
 		& p
 			padding: 2% 0
 		& .btn
 			margin-top: 20px
+
+.img-mt10
+	margin-top: 10%
+
+.inv-button
+	width: 400px
+	display: block
+	margin: 50px auto
+	background-color: $red
+	color: $white
+	font-size: 30px 
+	font-family: 'DIN Pro'
+	font-weight: 500
+	border-radius: 12px
+	padding: 10px
+	border: none
 // HISTORY / ABOUT US PAGE

@@ -5,8 +5,7 @@
 	position: relative
 	&:before
 		content: ""
-		background-image: url('../img/socialBG.jpg')
-		filter: grayscale(100%)
+		background-image: url('../img/socialBG.png')
 		background-position: center
 		background-size: cover
 		position: absolute
@@ -15,15 +14,15 @@
 		bottom: 0
 		left: 0
 		right: 0
-	&:after
-		content: ""
-		background-color: rgba(#636363, .5)
-		position: absolute
-		z-index: 6
-		top: 0
-		bottom: 0
-		left: 0
-		right: 0
+	// &:after
+	// 	content: ""
+	// 	background-color: rgba(#636363, .5)
+	// 	position: absolute
+	// 	z-index: 6
+	// 	top: 0
+	// 	bottom: 0
+	// 	left: 0
+	// 	right: 0
 	& .firstSection--content
 		margin-top: 50vh
 		&_mainText
@@ -39,7 +38,8 @@
 	background-repeat: no-repeat
 	padding: 100px 0
 	&--wrapper
-		padding: 10% 0 20% 0
+		padding: 1% 0 20% 0
+		margin: 10% 0
 		&_body
 			margin-top: 50px
 .social--r, .social--l
@@ -51,7 +51,7 @@
 			margin-bottom: 5%
 .social--r
 	& .social--ts_textblock
-		margin-top: 15%
+		margin-top: 5%
 
 .img-fullwidth
 	width: 100%
@@ -68,3 +68,5 @@
 	background-size: cover
 	background-repeat: no-repeat
 	padding: 100px 0
+	& p
+		padding-top: 10%

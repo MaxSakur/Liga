@@ -3,8 +3,7 @@
 	position: relative
 	&:before
 		content: ""
-		background-image: url('../img/historyBG.jpg')
-		filter: grayscale(100%)
+		background-image: url('../img/historyBG.png')
 		background-position: center
 		background-size: cover
 		position: absolute
@@ -13,17 +12,8 @@
 		bottom: 0
 		left: 0
 		right: 0
-	&:after
-		content: ""
-		background-color: rgba($dark, .8)
-		position: absolute
-		z-index: 6
-		top: 0
-		bottom: 0
-		left: 0
-		right: 0
 	& .firstSection--content
-		margin-top: 40vh
+		margin-top: 50vh
 		&_mainText
 			padding-bottom: 50px
 
@@ -140,15 +130,17 @@
 	&--wrapper
 		&_box
 			& .name
-				font-size: 20px
+				font-size: 32px
+				line-height: 1.2
 				font-weight: 100
 				font-family: 'DIN Pro'
 				color: $black
 				padding: 10px 0
 			& .role
 				color: $black
-				line-height: 1
+				line-height: 1.2
 				font-weight: 500
+				font-size: 22px
 
 	// HISTORYTREE
 .historytree
@@ -178,9 +170,9 @@
 				display: flex
 				justify-content: center
 				align-items: center
-				font-family: 'DIN Pro';
-				font-weight: 600;
-				font-size: 90px
+				font-family: 'DIN Pro Cond'
+				font-weight: 600
+				font-size: 100px
 				margin-top: -35px
 		.y2017
 			margin: 0

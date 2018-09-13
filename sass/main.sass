@@ -97,8 +97,6 @@ body
 	color: $black
 	background-color: $line
 
-
-
 // MY CUSTOM STYLES
 @import "__index.sass"
 @import "__career.sass"
@@ -107,6 +105,7 @@ body
 @import "__social.sass"
 @import "__contacts.sass"
 @import "__news.sass"
+
 
 // FOOTER
 .footer
@@ -118,6 +117,7 @@ body
 		justify-content: space-around
 		& li
 			list-style-type: none
+			padding: 0 20px
 			&:hover>a
 				color: $white
 			& a
@@ -131,7 +131,7 @@ body
 
 .standart--header
 	font-family: 'DIN Pro'
-	font-size: 50px
+	font-size: 52px
 	font-weight: bold
 	white-space: nowrap
 	text-transform: uppercase
@@ -149,7 +149,15 @@ body
 .fira--sans
 	font-family: 'Fira Sans', sans-serif !important
 	font-weight: 300 !important
-	
-
+.dinPro
+	font-family: 'DIN Pro' !important
+.choosen
+	color: $white !important
+.bold
+	font-weight: bold !important
+.caps
+	text-transform: uppercase	
+.link
+	color: #23527c
 
 @import "media" // Всегда в конце
