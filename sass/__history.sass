@@ -18,108 +18,63 @@
 			padding-bottom: 50px
 
 .thirdSection--history
-	& .slider--header
-		color: $black
-		text-align: center
-		padding: 50px 0
-	& .item
-		background-color: red
-		height: 300px
-		width: 533px
-		overflow: hidden
-		cursor: pointer
-		&:hover>.itempoint
-			width: 1000px
-			height: 1200px
-			top: 0
-			left: 0
-			border-radius: 0
-			background-color: rgba(#ec2808, .8)
-		& .itempoint
-			transition: all .5s ease
-			position: absolute
-			width: 200px
-			height: 200px
-			background-color: #ec2808
-			border-radius: 100%
-			display: block
-			z-index: 9
-			top: 12% 
-			left: 31% 
-
-		& .itembg
-			position: relative
-			z-index: 2
-			& img
-				position: absolute
-				height: 300px
-				width: 533px
-		&:before
-			content: ""
-			background-color: rgba($dark, .7)
-			position: absolute
-			z-index: 6
-			top: 0
-			bottom: 0
-			left: 0
-			right: 0
-		& .itemheader
-			position: relative
-			z-index: 10
-			padding-top: 100px
-			& p
-				font-size: 40px
-				text-align: center
-		& .itemtext
-			position: relative
-			z-index: 10
-			width: 80%
-			margin: auto
-			text-align: center
-
-	& .carousel .slider--controls
-		width: 100%
-	& .slider--controls svg
-		fill: rgba(grey, .5)
-		width: 30px
-		&:hover
-			fill:  #ec2808
-	& .carousel-indicators
-		bottom: 50px
-		& .left, .right
-			width: 30px
-    		margin: auto
-    		display: block
-		& .active
-			background-color: #ec2808
-		& li
-			background-color: rgba(grey, .5)
-
-	.slider--buttons
-		display: flex
-		flex-direction: row
-		width: 300px
-		justify-content: center
-		align-items: center
-		&_prev
-			flex-grow: 1
-			& svg
-				width: 30px
-
-				
-		&_indicators
-			flex-grow: 3
-			& .carousel-indicators
+	margin: 100px 0
+	&_content
+		margin-top: 50px
+		& .owl-carousel
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			width: 100%
+			& .item
+				cursor: pointer
+				width: 80%
+				height: 400px // fix it on media
+				margin: auto
 				position: relative
-				bottom: inherit
-				margin-left: 0
-				width: inherit
-				left: inherit
-		&_next
-			flex-grow: 1
-			& svg
-				width: 30px
-			
+				background-size: cover
+				background-repeat: no-repeat
+				& .itempoint
+					width: 200px
+					height: 200px
+					background-color: $red
+					border-radius: 100%
+					position: absolute
+					left: 35%
+					top: 25%
+					z-index: 0
+				& .itemheader p
+					font-family: 'DIN Pro'
+					font-size: 50px
+					text-transform: uppercase
+					font-weight: bold
+					text-align: center
+					z-index: 1
+					position: relative
+					padding-top: 150px
+				& .itemtext p
+					font-family: 'Fira Sans', sans-serif
+					width: 80%
+					font-size: 18px
+					margin: auto
+					text-align: center
+					position: relative
+					z-index: 1
+
+			// add bg to other images
+			& .item1
+				background-image: url('../img/cinnosti/iнновацiйнiсть.png')
+			& .item2
+				background-image: url('../img/cinnosti/вiдповiдальнiсть.png')	
+			& .item3
+				background-image: url('../img/cinnosti/динамiчнiсть.png')
+			& .item4
+				background-image: url('../img/cinnosti/ефективнiсть.png')
+			& .item5
+				background-image: url('../img/cinnosti/пiдприэмливiсть.png')
+			& .item6
+				background-image: url('../img/cinnosti/творення.png')
+
 	// NAGL RADA PAGE
 .nagl-rada
 	padding: 100px 0

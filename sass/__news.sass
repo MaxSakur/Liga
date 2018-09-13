@@ -25,20 +25,23 @@
             border-bottom: 1px solid #000
 
 .box
+    padding: 30px 20px
     border: 1px solid $grey
     color: $black
     font-family: 'DIN Pro'
     margin: 20px 0
     border: 1px solid transparent
     cursor: pointer
+    filter: grayscale(100%)
     &:hover
-        
+        background-color: $grey
+        filter: grayscale(10%)
     & p
-        font-size: 24px
+        font-size: 20px
         
     &--header
         color: $black
         font-weight: 700
         font-size: 24px
-
+            
     
