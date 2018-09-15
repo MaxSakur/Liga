@@ -131,7 +131,7 @@ body
 
 .standart--header
 	font-family: 'DIN Pro'
-	font-size: 52px
+	font-size: 48px
 	font-weight: bold
 	white-space: nowrap
 	text-transform: uppercase
@@ -139,7 +139,8 @@ body
 
 .standat--textcolor
 	color: $black
-	font-size: 33px
+	font-size: 28px
+	font-weight: 200
 	line-height: 1.5
 .fz15
 	font-size: 15px
@@ -150,7 +151,7 @@ body
 	color: $black
 .fira--sans
 	font-family: 'Fira Sans', sans-serif !important
-	font-weight: 300 !important
+	font-weight: 200 !important
 .dinPro
 	font-family: 'DIN Pro' !important
 .choosen
@@ -161,5 +162,14 @@ body
 	text-transform: uppercase	
 .link
 	color: #23527c
-
+.rowButton
+	display: flex
+	flex-direction: row
+	justify-content: center
+	& button
+		margin: 0 5% 
+.fullWidth
+	height: 100vh
+.childPage
+	height: 70vh
 @import "media" // Всегда в конце
