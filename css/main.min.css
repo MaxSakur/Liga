@@ -145,7 +145,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 150px 0; }
+  padding: 150px 0 50px; }
   .secondSection--content {
     position: relative; }
     .secondSection--content_mainText {
@@ -489,12 +489,12 @@ body {
   margin-top: 10%; }
 
 .inv-button {
-  width: 400px;
+  width: 350px;
   display: block;
   margin: 50px auto;
   background-color: #ec2808;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'DIN Pro';
   font-weight: 500;
   -webkit-border-radius: 12px;
@@ -522,7 +522,7 @@ body {
       padding-bottom: 50px; }
 
 .thirdSection--history {
-  margin: 100px 0; }
+  margin: 50px 0; }
   .thirdSection--history_content {
     margin-top: 50px; }
     .thirdSection--history_content .owl-carousel {
@@ -608,9 +608,9 @@ body {
     font-size: 22px; }
 
 .historytree--header {
-  color: #fff;
+  color: #000;
   text-align: center;
-  padding: 50px 0; }
+  padding: 150px 0; }
 
 .historytree--wrapper_item {
   z-index: 1;
@@ -842,6 +842,11 @@ body {
     color: #000; }
     .social--r .social--ts_textblock p, .social--l .social--ts_textblock p {
       margin-bottom: 5%; }
+    .social--r .social--ts_textblock .link, .social--l .social--ts_textblock .link {
+      text-decoration: none;
+      cursor: pointer; }
+      .social--r .social--ts_textblock .link:hover, .social--l .social--ts_textblock .link:hover {
+        color: #01213D; }
 
 .social--r .social--ts_textblock {
   margin-top: 5%; }
